@@ -32,7 +32,7 @@ public class WebGraph {
 		       String line = value.toString();
 		       StringTokenizer tokenizer = new StringTokenizer(line);
 		       while (tokenizer.hasMoreTokens()) {
-					word.set(tokenizer.nextToken());
+					word.set(tokenizer.nextToken() + tokenizer.nextToken());
 					output.collect(word, one);
 		       }
 	     }
