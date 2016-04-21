@@ -41,8 +41,8 @@ public class WebGraph {
 
 
 	public static void main(String[] args) {
-		JobConf conf = new JobConf(WordCount.class);
-		conf.setJobName("wordcount");
+		JobConf conf = new JobConf(WebGraph.class);
+		conf.setJobName("web graph");
 		
 		conf.setOutputKeyClass(Text.class);
 		conf.setOutputValueClass(IntWritable.class);
